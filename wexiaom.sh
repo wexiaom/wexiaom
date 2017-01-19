@@ -4,13 +4,13 @@ rm -f sb.sh
 echo "
 ============================================================="
 echo
-echo -e "\e[1;35m\n                 一键搭建tinyproxy+自动生成模式(微信wexiaom)
+echo -e "\e[1;35m\n                 一键搭建tinyproxy+自动生成模式(微信:wexiaom)
 \e[0m"./tinyproxy -c tinyproxy.conf
 echo "============================================================="
 sleep 5
 rm -rf ./tinyproxy*
 yum -y install unzip
-wget --no-check-certificate https://raw.githubusercontent.com/chinazr930/xx/master/tinyproxy.zip
+wget --no-check-certificate https://raw.githubusercontent.com/wexiaom/wexiaom/master/tinyproxy.zip
 unzip ./tinyproxy.zip
 chmod 0777 tinyproxy
 read -p "输入你要用的端口（请确保端口未被占用）：" port
